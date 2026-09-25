@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ralph Leo — Lead Product Designer designing complex products into clear, scalable experiences.">
+<title>Ralph Leo — Lead Product Designer</title>
+<style>
+:root{--green:#007B50;--ink:#101412;--muted:#66716c;--paper:#f5f6f2;--line:#d9ded9;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1240px;margin:auto;padding:0 32px}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:21px}.logo span{color:var(--green)}
+.links{display:flex;gap:28px;font-size:14px;color:#45504b}.links a:hover{color:var(--green)}
+.nav-cta{background:var(--ink);color:white;padding:11px 17px;border-radius:999px;font-size:13px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center;padding:80px 0 95px}
+.kicker{font-size:13px;text-transform:uppercase;letter-spacing:.16em;color:var(--green);font-weight:700;margin-bottom:22px}
+h1{font-size:clamp(58px,8vw,112px);line-height:.9;letter-spacing:-.075em;margin:0;max-width:900px}
+.hero p{font-size:20px;line-height:1.55;color:var(--muted);max-width:650px;margin:32px 0}
+.actions{display:flex;gap:12px;align-items:center}.btn{padding:15px 21px;border-radius:999px;font-size:14px;font-weight:700;border:1px solid var(--ink)}.primary{background:var(--green);border-color:var(--green);color:white}.secondary{background:transparent}
+.hero-card{background:var(--ink);color:white;border-radius:28px;padding:28px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(2deg);box-shadow:0 24px 60px rgba(0,0,0,.12)}
+.hero-card .circle{width:110px;height:110px;border-radius:50%;background:var(--green);margin-left:auto;box-shadow:0 0 0 22px rgba(0,123,80,.12)}
+.hero-card small{color:#aeb8b3;text-transform:uppercase;letter-spacing:.14em}.hero-card strong{font-size:36px;letter-spacing:-.05em;line-height:1}
+section{padding:95px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:38px}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.section-title{font-size:52px;letter-spacing:-.06em;margin:10px 0 0}.section-note{max-width:360px;color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.project{min-height:430px;border:1px solid var(--line);border-radius:24px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:.35s;background:white}.project:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(16,20,18,.09)}
+.visual{height:245px;border-radius:18px;padding:22px;position:relative;overflow:hidden;background:linear-gradient(135deg,#dfe9e3,#9ebaae)}.visual.dark{background:linear-gradient(135deg,#101412,#1d4b3b)}.visual.gold{background:linear-gradient(135deg,#ece8dc,#9d957e)}.visual.blue{background:linear-gradient(135deg,#dce8eb,#78959b)}
+.mock-window{position:absolute;left:18%;right:8%;top:18%;bottom:-16%;background:rgba(255,255,255,.92);border-radius:14px;padding:16px;box-shadow:0 12px 35px rgba(0,0,0,.15)}.mock-line{height:8px;background:#d6ded9;border-radius:10px;margin:8px 0}.mock-line.short{width:55%}.mock-block{height:70px;background:#edf2ef;border-radius:9px;margin-top:14px}.project-meta{padding-top:20px}.project-label{font-size:11px;color:var(--green);font-weight:800;letter-spacing:.12em}.project h3{font-size:28px;letter-spacing:-.045em;margin:7px 0}.project p{color:var(--muted);margin:0;line-height:1.5}.arrow{float:right;color:var(--green);font-size:24px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;border-top:1px solid var(--line)}.about h2{font-size:56px;letter-spacing:-.06em;line-height:.98;margin:10px 0}.about-copy{font-size:22px;line-height:1.55;color:#3f4944}.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.pill{border:1px solid var(--line);background:white;padding:10px 14px;border-radius:999px;font-size:13px}
+.process{background:var(--ink);color:white;border-radius:30px;padding:65px}.process-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:50px}.step{border-top:1px solid #45504b;padding-top:15px}.step b{color:#9bd3bd;font-size:12px}.step h4{font-size:20px;margin:12px 0 8px}.step p{color:#aeb8b3;font-size:13px;line-height:1.5;margin:0}
+.contact{padding-bottom:110px}.contact-box{background:var(--green);color:white;border-radius:30px;padding:65px;display:flex;align-items:end;justify-content:space-between;gap:40px}.contact-box h2{font-size:clamp(48px,6vw,80px);letter-spacing:-.07em;line-height:.9;margin:0;max-width:720px}.contact-box a{background:white;color:var(--ink);padding:15px 20px;border-radius:999px;font-weight:700;white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:800px){.wrap{padding:0 20px}.links{display:none}.hero{grid-template-columns:1fr;padding:65px 0}.hero-card{display:none}.grid,.about{grid-template-columns:1fr}.process-grid{grid-template-columns:repeat(2,1fr)}.section-title{font-size:42px}.about{gap:35px}.contact-box{padding:40px;display:block}.contact-box a{display:inline-block;margin-top:30px}.section-head{display:block}.section-note{margin-top:15px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="logo" href="#">RALPH<span>LEO</span></a><div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#approach">Approach</a><a href="#ai">AI + Design</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Let's talk ↗</a></nav>
+
+<header class="hero">
+<div>
+<div class="kicker">Lead Product Designer · Chennai</div>
+<h1>Complex products.<br><span style="color:var(--green)">Clear experiences.</span></h1>
+<p>I design enterprise and workflow-heavy products by turning ambiguous business requirements into clear, scalable digital experiences.</p>
+<div class="actions"><a class="btn primary" href="#work">View selected work</a><a class="btn secondary" href="#about">About me</a></div>
+</div>
+<div class="hero-card"><div class="circle"></div><small>Product Design / UX Strategy / AI</small><strong>Designing beyond the interface.</strong></div>
+</header>
+
+<section id="work">
+<div class="section-head"><div><div class="eyebrow">Selected work</div><h2 class="section-title">A decade of solving<br>messy problems.</h2></div><div class="section-note">A selection of enterprise products, operational platforms and digital experiences shaped across complex business environments.</div></div>
+<div class="grid">
+<article class="project"><div class="visual dark"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-block"></div></div></div><div class="project-meta"><span class="project-label">01 · ENTERPRISE PRODUCT</span><h3>ConnectOne <span class="arrow">↗</span></h3><p>Design system and scalable experience for a long-term marketing e-commerce platform.</p></div></article>
+<article class="project"><div class="visual"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-block"></div></div></div><div class="project-meta"><span class="project-label">02 · OPERATIONS</span><h3>TAC <span class="arrow">↗</span></h3><p>Digital gatekeeping experience using QR verification to improve vehicle flow.</p></div></article>
+<article class="project"><div class="visual gold"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-block"></div></div></div><div class="project-meta"><span class="project-label">03 · MARKETING PLATFORM</span><h3>PNC <span class="arrow">↗</span></h3><p>Customization portal enabling 50+ hubs to create and manage marketing collateral.</p></div></article>
+<article class="project"><div class="visual blue"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-block"></div></div></div><div class="project-meta"><span class="project-label">04 · EXECUTIVE TOOL</span><h3>Strategy& <span class="arrow">↗</span></h3><p>Figma-powered strategic experience designed to make complex information easier to understand.</p></div></article>
+<article class="project"><div class="visual dark"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-block"></div></div></div><div class="project-meta"><span class="project-label">05 · DISTRIBUTION</span><h3>CONA / Happy Express <span class="arrow">↗</span></h3><p>Connected delivery workflows across SAP, transport and operational review tools.</p></div></article>
+<article class="project"><div class="visual"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-block"></div></div></div><div class="project-meta"><span class="project-label">06 · DIGITAL EXPERIENCE</span><h3>Coca-Cola Holiday Magic <span class="arrow">↗</span></h3><p>Interactive storytelling concept combining research, visual direction and AI-assisted creative production.</p></div></article>
+</div>
+</section>
+
+<section id="about" class="about"><div><div class="eyebrow">About</div><h2>I design beyond the interface.</h2></div><div><p class="about-copy">I'm a Product Designer & Product Solutionist with 9+ years of experience designing enterprise and workflow-heavy digital products. My work sits at the intersection of business, technology and human behaviour — translating complexity into experiences that are easier to understand, use and scale.</p><div class="skills"><span class="pill">Product Design</span><span class="pill">UX Strategy</span><span class="pill">Enterprise UX</span><span class="pill">Design Systems</span><span class="pill">Interaction Design</span><span class="pill">AI-assisted Design</span></div></div></section>
+
+<section id="approach"><div class="process"><div class="eyebrow">How I work</div><h2 class="section-title" style="color:white">From ambiguity<br>to clarity.</h2><div class="process-grid"><div class="step"><b>01</b><h4>Discover</h4><p>Understand users, business goals and constraints.</p></div><div class="step"><b>02</b><h4>Define</h4><p>Turn ambiguity into a structured problem.</p></div><div class="step"><b>03</b><h4>Explore</h4><p>Generate and challenge possible solutions.</p></div><div class="step"><b>04</b><h4>Design</h4><p>Create flows, systems and interfaces.</p></div><div class="step"><b>05</b><h4>Validate</h4><p>Test assumptions and refine the experience.</p></div><div class="step"><b>06</b><h4>Scale</h4><p>Build reusable patterns that teams can grow with.</p></div></div></div></section>
+
+<section id="ai"><div class="section-head"><div><div class="eyebrow">AI + Design</div><h2 class="section-title">AI as an accelerator.<br>Judgment stays human.</h2></div><div class="section-note">I use AI for research synthesis, ideation, exploration, content, prompt development and creative production — while keeping product judgment and user needs at the centre.</div></div></section>
+
+<section id="contact" class="contact"><div class="contact-box"><h2>Let's build something meaningful.</h2><a href="mailto:hello@ralphleo.com">Get in touch ↗</a></div></section>
+
+<footer><span>© 2026 Ralph Leo</span><span>Lead Product Designer · ralphleo.com</span></footer>
+</div>
+</body>
+</html>
