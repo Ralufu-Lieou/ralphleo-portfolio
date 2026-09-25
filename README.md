@@ -1,20 +1,15 @@
-# Ralph Leo Portfolio — Hero V1
+# Ralph Leo Portfolio — Hero V2
 
-First section only.
+Hero section only.
 
-## Upload to GitHub Pages
+Header:
+- Ralph Leo logo on the left
+- Work / Resume on the right
 
-Keep your existing `CNAME` file in the repository.
+Hero:
+- Ralph Leo
+- Lead Product Designer • UI/UX Designer
+- One-line experience/positioning statement
+- Chennai, India
 
-Replace the existing `index.html` with this version and upload the `assets` folder beside it.
-
-Final structure:
-
-CNAME
-index.html
-assets/
-  style.css
-
-Do not delete CNAME.
-
-This section is intentionally isolated so the next portfolio section can be designed and approved separately.
+Keep the existing GitHub Pages `CNAME` file.

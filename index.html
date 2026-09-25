@@ -10,54 +10,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-  <main class="hero" id="home">
+  <main class="hero">
     <div class="texture" aria-hidden="true"></div>
 
-    <header class="nav">
-      <a class="monogram" href="#home" aria-label="Ralph Leo home">RL</a>
+    <header class="header">
+      <a class="logo" href="/" aria-label="Ralph Leo">
+        <img src="assets/RL-Logo.svg" alt="Ralph Leo logo">
+      </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#work">Work</a>
         <a href="#resume">Resume</a>
       </nav>
     </header>
 
-    <section class="hero-content" aria-labelledby="hero-title">
-      <p class="eyebrow">Ralph Leo</p>
+    <section class="intro" aria-labelledby="name">
+      <h1 id="name">Ralph Leo</h1>
 
-      <h1 id="hero-title">Ralph Leo</h1>
+      <p class="role">LEAD PRODUCT DESIGNER <span>•</span> UI/UX DESIGNER</p>
 
-      <p class="role">
-        LEAD PRODUCT DESIGNER <span>•</span> UI/UX DESIGNER
+      <p class="summary">
+        9+ years designing enterprise, e-commerce and digital experiences —
+        turning complex business requirements into scalable products,
+        workflows and design systems.
       </p>
 
-      <div class="hero-meta">
-        <p>
-          I design complex products, workflow-heavy systems and digital
-          experiences — from the real problem to the pixels to the motion.
-        </p>
-
-        <div class="meta-right">
-          <span>CHENNAI</span>
-          <span>/ PORTFOLIO ’26</span>
-        </div>
-      </div>
+      <p class="location">Chennai, India</p>
     </section>
 
-    <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll" aria-hidden="true">
       <span>SCROLL</span>
-      <span class="arrow">↓</span>
+      <span>↓</span>
     </div>
   </main>
 
-  <!-- Placeholder anchors for the next sections. -->
-  <section id="work" class="placeholder">
-    <span>WORK — NEXT SECTION</span>
-  </section>
-
-  <section id="resume" class="placeholder">
-    <span>RESUME — NEXT SECTION</span>
-  </section>
+  <div id="work" class="next-section">WORK</div>
+  <div id="resume" class="next-section">RESUME</div>
 </body>
 </html>
