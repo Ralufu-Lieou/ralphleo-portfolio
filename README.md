@@ -1,15 +1,13 @@
-# Ralph Leo Portfolio — Hero V2
+# Ralph Leo — Hero
 
-Hero section only.
+GitHub Pages-ready hero section.
 
-Header:
-- Ralph Leo logo on the left
-- Work / Resume on the right
+## Assets
+- `assets/hero-video.mp4` — supplied hero background video
+- `assets/fonts/unbounded.woff2` — add your Unbounded WOFF2 file here
 
-Hero:
-- Ralph Leo
-- Lead Product Designer • UI/UX Designer
-- One-line experience/positioning statement
-- Chennai, India
+## Optional
+- Add `resume.pdf` in the project root for the Resume link.
 
-Keep the existing GitHub Pages `CNAME` file.
+## Publish
+Upload the contents of this folder to the root of the `main` branch.
