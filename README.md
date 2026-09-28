@@ -1,13 +1,12 @@
-# Ralph Leo — Hero
+RALPH LEO — HERO FIX
 
-GitHub-ready hero section using the supplied background video and the original RL-Logo.svg.
+Upload/replace:
+- index.html
+- assets/style.css
+- assets/RL-Logo.svg
+- assets/hero-video.mp4
+- CNAME
 
-## Files
-- `index.html` — hero markup
-- `assets/style.css` — styling
-- `assets/hero-video.mp4` — supplied hero video
-- `RL-Logo.svg` — original Ralph Leo logo
-- `assets/fonts/unbounded.woff2` — add your Unbounded font file here
-
-## GitHub Pages
-Upload these files to the root of your `main` branch. Keep the relative paths unchanged.
+IMPORTANT:
+The existing GitHub asset `assets/Unbounded-VariableFont_wght.woff` is intentionally referenced by style.css. Do not rename it.
+If your resume.pdf already exists in the repository, keep it.
