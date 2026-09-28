@@ -81,21 +81,16 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
 }
 
-.brand { display:flex; align-items:center; gap:14px; }
-.brand-mark {
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(73,217,154,.72);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color: var(--accent);
-  font: 600 11px/1 'Geist', sans-serif;
-  letter-spacing: -.08em;
+.brand { display:flex; align-items:center; }
+.brand-logo {
+  display:block;
+  width:112px;
+  height:auto;
+  filter: brightness(0) invert(1);
+  opacity:.92;
+  transition: opacity .25s ease, transform .25s ease;
 }
-.brand-mark span:first-child { transform: translateX(2px); }
-.brand-mark span:last-child { transform: translateX(-1px); opacity:.8; }
-.brand-name { font-size: 11px; letter-spacing: .17em; font-weight: 500; }
+.brand:hover .brand-logo { opacity:1; transform:translateY(-1px); }
 
 nav { display:flex; gap:34px; align-items:center; }
 nav a { position:relative; font-size:13px; color:rgba(239,247,243,.68); transition:color .25s ease; }
@@ -157,7 +152,7 @@ h1 {
 
 @media (max-width: 700px) {
   .site-header { height:78px; padding:0 5vw; }
-  .brand-name { display:none; }
+  .brand-logo { width:96px; }
   nav { gap:22px; }
   .hero-frame { left:5vw; right:5vw; top:12vh; bottom:8vh; }
   .hero-content { width:88%; }
