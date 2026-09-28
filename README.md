@@ -1,13 +1,13 @@
 # Ralph Leo — Hero
 
-GitHub Pages-ready hero section.
+GitHub-ready hero section using the supplied background video and the original RL-Logo.svg.
 
-## Assets
-- `assets/hero-video.mp4` — supplied hero background video
-- `assets/fonts/unbounded.woff2` — add your Unbounded WOFF2 file here
+## Files
+- `index.html` — hero markup
+- `assets/style.css` — styling
+- `assets/hero-video.mp4` — supplied hero video
+- `RL-Logo.svg` — original Ralph Leo logo
+- `assets/fonts/unbounded.woff2` — add your Unbounded font file here
 
-## Optional
-- Add `resume.pdf` in the project root for the Resume link.
-
-## Publish
-Upload the contents of this folder to the root of the `main` branch.
+## GitHub Pages
+Upload these files to the root of your `main` branch. Keep the relative paths unchanged.
